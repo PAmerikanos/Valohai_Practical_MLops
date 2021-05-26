@@ -92,7 +92,38 @@ the right direction to solve the original issue. Don’t be afraid to go back to
 
 ### Use Every Project as an Opportunity to Educate Your Organization about Machine Learning
 
+(...) make sure you share learning from your machine learning
+projects across the organization.
+
 ### Define Clear Shared Objective and Metrics
+
+- #### Assumptions
+
+  - Why does this project exist?
+  - How is performance measured today?
+  - How will the deployed model be consumed?
+  - Who owns the data?
+
+- #### Success criteria
+
+  - When defining the metrics for your success criteria, think about:
+    - What is the key metric that will determine if the model can be taken to production?
+    - How will the model be taken to production?
+    - How often will the model need to be updated?
+    - Model metrics
+    - Cost to maintain and update the model
+    - Ethical considerations
+  - What’s the minimum viable product?
+    - Model accuracy x to be able to test in a sandboxed environment
+    - Manually train, build and deploy the pipeline.
+  - MLOps metrics
+    - Model update frequency met (and able to identify stale models)
+    - Time to re-train and deploy a new model and push to production
+    - Performance of model endpoint for online predictions (e.g. response time in ms)
+    - /# of calls / % of failed calls to the model endpoint
+    - Collaboration between the multi-disciplinary team (e.g. data scientists, engineers, IT-Ops, legal, business)
+    - Attendance of key stakeholders to regular project updates (for example, every six weeks)
+    - Infrastructure scales to the machine learning teams without manual work from IT.
 
 ---
 
