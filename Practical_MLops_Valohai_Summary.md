@@ -1,7 +1,9 @@
 
-# Practical MLops - Valohai
+# Practical MLops
 
 ## How to get ready for production models
+
+This is the summary of [an ebook by Valohai](https://valohai.com/assets/files/practical-mlops-ebook.pdf)
 
 ---
 
