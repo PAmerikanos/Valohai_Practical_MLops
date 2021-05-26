@@ -68,6 +68,23 @@ Therefore, time to market should be the number one metric to look at and optimiz
 
 ## How to Quantify Success in an MLOps Project?
 
+Only a model that is running in production can bring value.
+
+Here are three steps to get started:
+1. Define your objective and clear, concrete, and measurable metrics with all the relevant stakeholders
+    * Ensure everyone understands the “why” behind the project (...)
+    * Document and share how the work is currently done (...) and what it will take to replace the current way of working.
+    * Uncover assumptions that different team members have (...)
+2. Measure the success of different stages of the project (...)
+    * It will be hard to estimate the total time it will take to deliver
+    * Make sure you split your project into smaller pieces to validate your assumptions, track your progress, and gather feedback.
+    * (...) make sure you reflect on your progress and whether you’re heading in
+the right direction to solve the original issue. Don’t be afraid to go back to defining the problem. Document the lessons you’ve learned and place them in an internal Wiki for other teams to learn from.
+3. Have a multi-disciplinary team with clear roles and responsibilities
+    * (...) measure how well your team is working together.
+    * Make sure everyone understands each other’s roles and responsibilities in this project.
+    * Involve IT early on
+
 ### Speak the Same Language
 
 ### Use Every Project as an Opportunity to Educate Your Organization about Machine Learning
