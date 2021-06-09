@@ -131,9 +131,19 @@ projects across the organization.
 
 ### Company 1
 
+Company 1 jumps right into the nitty-gritty and starts gathering and analyzing data. (...) From idea to production, the delivery time is blazingly fast.<br>
+It’s hard to reproduce all the steps that it took to train the model – but it gets done.<br>
+Finally, the company decides to put in place tooling to automate retraining and deployment, and at this point, everything is rebuilt.
+
 ### Company 2
 
+Company 2 acknowledges that machine learning models will be core assets going forward and decides to adopt ML focused tooling before going past the first successful proof-of-concept.<br>
+While Company 2 is slower to initial delivery, the benefits start to compound quickly. Everything is automatically reproducible, and data scientists can concentrate on further development rather than firefighting.
+
 ### Learnings
+
+- The right time to consider tooling and workflow is when the first data scientist is hired, not when the first model goes to production (...)
+- Building up an ML workflow does require a strategic commitment and investment from the company.
 
 ---
 
