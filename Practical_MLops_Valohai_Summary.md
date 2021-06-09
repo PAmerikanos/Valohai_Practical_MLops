@@ -178,15 +178,35 @@ Having a unified pipeline for data scientists and engineers to move from the fir
 
 ### Metrics and Model Optimization
 
+(...) how should the hyperparameters of the model be chosen?<br>
+Metrics are the quantities which define the success or failure of a model.
+
 #### Optimization Vocabulary
+
+The act of optimizing the loss function is often called training.
 
 #### Training/Validation/Test Datasets
 
+- Training dataset - Between 60-95% of the available data. Used to compute the training loss for a model
+- Validation dataset - Between 3-20% of the available data. (...) optimizing the validation metrics finds the hyperparameters of a model
+- Test dataset - Between 2-20% of the available data. After model tuning, provides an unbiased estimate of how the validation metrics will perform in production.
+
 #### Validation Metrics for Tuning and Production
+
+They can mirror those found in an ML classroom, or they can be entirely unique to a specific business case.
 
 #### Optimizing Metrics and Decision Making
 
+Bayesian optimization is a popular tool for model tuning: it requires no gradient information, can optimize noisy metrics and can work with categorical parameters<br>
+In most production settings, multiple metrics define success.<br>
+Multimetric optimization explores the tradeoff between competing metrics.<br>
+(...) the test dataset should be used to reevaluate the metrics on any hyperparameters being considered for production.
+
 #### Key Takeaways - Metrics and Model Optimization
+
+1. Split available data into training, validation and test datasets.
+2. Define and study metrics which represent success in production, not just during training.
+3. Identify the best hyperparameters for your metrics with as little tuning cost as possible.
 
 ### Productionalization - End-to-End Pipelines
 
