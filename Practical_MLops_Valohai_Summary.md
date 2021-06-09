@@ -151,13 +151,30 @@ While Company 2 is slower to initial delivery, the benefits start to compound qu
 
 ### Model and Data Exploration
 
+Exploration is the first concrete, hands-on step of any machine learning project.
+
 #### Data Exploration
+
+Without data, there can be no model, so data exploration precedes model exploration quite naturally.<br>
+Fast iterations and visual feedback are the critical components for the data exploration work.<br>
+Many of the notebooks for this step end up as disposable throwaways.<br>
+Reproducibility, library dependencies, and version control can bring some value but are often not a hard requirement.
 
 #### Model Exploration
 
+Choosing the model often requires the data scientist to try out and look for optimal parameters (also known as hyperparameters) within the model.<br>
+Model exploration has higher requirements from the technical and DevOps point of view than data exploration.<br>
+Model exploration costs both time and money, so version control and reproducibility are paramount for all the experiments.
+
 #### Exploration and MLOps
 
-#### Key Takeaways
+Having a unified pipeline for data scientists and engineers to move from the first experiment to the final productized model is essential.
+
+#### Key Takeaways - Model and Data Exploration
+
+1. Data exploration is a lightweight, offline task for understanding data using visualization
+2. Model exploration has higher requirements for computing power and version control
+3. Disconnecting exploration and MLOps is disconnecting data scientists and engineers
 
 ### Metrics and Model Optimization
 
@@ -169,7 +186,7 @@ While Company 2 is slower to initial delivery, the benefits start to compound qu
 
 #### Optimizing Metrics and Decision Making
 
-#### Key Takeaways
+#### Key Takeaways - Metrics and Model Optimization
 
 ### Productionalization - End-to-End Pipelines
 
@@ -177,13 +194,13 @@ While Company 2 is slower to initial delivery, the benefits start to compound qu
 
 #### The Automated Pipeline
 
-#### Key Takeaways
+#### Key Takeaways - Productionalization - End-to-End Pipelines
 
 ### Productionalization - Feature Stores
 
 #### The Feature Store
 
-#### Key takeaways
+#### Key takeaways - Productionalization - Feature Stores
 
 ### Testing
 
@@ -193,7 +210,7 @@ While Company 2 is slower to initial delivery, the benefits start to compound qu
 
 #### Infrastructure Testing
 
-#### Key Takeaways
+#### Key Takeaways - Testing
 
 ### Deployment and Inference
 
@@ -203,7 +220,7 @@ While Company 2 is slower to initial delivery, the benefits start to compound qu
 
 #### Edge Inference
 
-#### Key Takeaways
+#### Key Takeaways - Deployment and Inference
 
 ---
 
