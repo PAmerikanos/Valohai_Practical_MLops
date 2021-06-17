@@ -210,11 +210,39 @@ Multimetric optimization explores the tradeoff between competing metrics.<br>
 
 ### Productionalization - End-to-End Pipelines
 
+Productionalization for ML is taking that problem-solving capability - only existing in the data scientist’s laptop today - and refining it into an accessible and scalable system.
+
 #### The Manual Cycle
+
+![Manual ML steps to serve the model as a prediction service.](manual_ML_steps.png)
+Characteristics of a manual ML pipeline:
+
+- **The model is the product**
+- Manual or script-driven process
+- A disconnect between the data scientist and the engineer
+- Slow iteration cycle
+- No automated testing or performance monitoring
+- No version control
 
 #### The Automated Pipeline
 
+![Automated ML pipeline](automated_ML_pipeline.png)
+An automated pipeline consists of components and a blueprint for how those are coupled to produce and update the most crucial component – the model.<br>
+The system offers the ability to execute, iterate, and monitor a single component in the context of the entire pipeline with the same ease and rapid iteration as running a local notebook cell on a laptop.
+
+Characteristics of an automated ML pipeline:
+- **The pipeline is the product**
+- Fully automated process
+- Co-operation between the data scientist and the engineer
+- Fast iteration cycle
+- Automated testing and performance monitoring
+- Version-controlled
+
 #### Key Takeaways - Productionalization - End-to-End Pipelines
+
+1. Do not deploy the model; deploy the pipeline.
+2. To build a pipeline, split the system down into small well-defined components.
+3. Model accuracy will eventually degrade as the world changes.
 
 ### Productionalization - Feature Stores
 
