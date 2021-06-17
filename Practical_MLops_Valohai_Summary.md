@@ -1,4 +1,6 @@
 
+![Valohai logo](images/Valohai_logo.png)
+
 # Practical MLops
 
 ## How to get ready for production models
@@ -214,7 +216,7 @@ Productionalization for ML is taking that problem-solving capability - only exis
 
 #### The Manual Cycle
 
-![Manual ML steps to serve the model as a prediction service.](manual_ML_steps.png)
+![Manual ML steps to serve the model as a prediction service.](images/manual_ML_steps.png)
 Characteristics of a manual ML pipeline:
 
 - **The model is the product**
@@ -226,7 +228,7 @@ Characteristics of a manual ML pipeline:
 
 #### The Automated Pipeline
 
-![Automated ML pipeline](automated_ML_pipeline.png)
+![Automated ML pipeline](images/automated_ML_pipeline.png)
 An automated pipeline consists of components and a blueprint for how those are coupled to produce and update the most crucial component – the model.<br>
 The system offers the ability to execute, iterate, and monitor a single component in the context of the entire pipeline with the same ease and rapid iteration as running a local notebook cell on a laptop.
 
