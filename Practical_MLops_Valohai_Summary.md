@@ -233,6 +233,7 @@ An automated pipeline consists of components and a blueprint for how those are c
 The system offers the ability to execute, iterate, and monitor a single component in the context of the entire pipeline with the same ease and rapid iteration as running a local notebook cell on a laptop.
 
 Characteristics of an automated ML pipeline:
+
 - **The pipeline is the product**
 - Fully automated process
 - Co-operation between the data scientist and the engineer
@@ -248,19 +249,53 @@ Characteristics of an automated ML pipeline:
 
 ### Productionalization - Feature Stores
 
+Tooling for managing features is almost non-existent.
+
 #### The Feature Store
+
+Feature stores are central hubs for features. They transform raw data into feature values, store the values, and serve them for model training and online predictions.
+
+Feature stores allow data scientists to:
+
+- Build a library of great features collaboratively.
+- Deploy features to production instantly.
+- Share, discover, and re-use features.
 
 #### Key takeaways - Productionalization - Feature Stores
 
+1. Building features and getting them to production is one of the hardest parts of productionizing ML.
+2. Feature stores allow data scientists to build, deploy, and share features quickly and easily.
+3. Feature stores complement existing ML infrastructure to bring DevOps-like capabilities to the feature lifecycle.
+
 ### Testing
+
+Testing in ML is like trying to hit a moving target. The system’s behavior depends on the data’s dynamic qualities and the various model configuration choices.
 
 #### Data Testing
 
+Like the unit tests for your code define and test your assumptions about the inputs, your data validation tests should do the same for training and inference input data. You should test for null values, abnormal statistical distributions within a feature, and the relationships between features.
+
 #### Model Testing
+
+In the training phase, you can test the impact of each hyperparameter.
+
+When deploying the model, test the relationship between your offline metrics and the actual impact of the model in the real world.
+
+Another viable smoke test can be testing your new shiny model against a simple baseline model. Trickle small amounts of live production data to be handled by your new model as a canary test before you fully commit.
 
 #### Infrastructure Testing
 
+Your ML pipeline should be as reproducible as possible from one day to the next.
+
+Test the reproducibility of your training pipeline by training two or more models side-by-side with the same data and measure any discrepancies between metrics. Also, test things like the ability to continue training predictably from a mid-crash checkpoint. Don’t forget to create integration smoke tests for your entire pipeline, all the way from first data validation down to model deployment. These sorts of tests should run continuously and during the deployment of a new model version.
+
+You should continuously test your rollback infrastructure, as it is your last line of defense when all other tests have failed you.
+
 #### Key Takeaways - Testing
+
+1. Due to the dynamic nature of ML, testing is even more critical.
+2. Testing code is good; testing data is paramount.
+3. Reproducibility of the pipeline is the key to safe deployment.
 
 ### Deployment and Inference
 
