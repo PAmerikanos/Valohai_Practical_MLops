@@ -301,12 +301,43 @@ You should continuously test your rollback infrastructure, as it is your last li
 
 #### Batch Inference
 
+Instead of providing value instantly in real-time for each request, batch inference provides answers to a set of questions later.
+
+In the MLOps context, the value of inference in fixed intervals allows engineers to parallelize more efficiently and use a considerable amount of computing power more predictably.
+
 #### Online Inference
+
+Online inference suits any situation where the value provided by the model is needed right away.
+
+Any error or bias in the prediction leaks back to the customer right away. The system also needs to be automatically scalable to accommodate the peaks in traffic. (...) Requirements for monitoring are much higher, and reaction time for any intervention needs to be close to zero.
 
 #### Edge Inference
 
+Instead of having an app consume a central cloud API, you deploy the model as part of your application directly in the user’s device or browser.
+
+Perfect scaling comes for free as the more requests you get, the more edge devices you have at your disposal. (...) The downside is that it might become harder to maintain all the different versions out there.
+
+Another potential downside is security. While you are not sending all your data to external devices, you are sending a model that is trained with that data.
+
 #### Key Takeaways - Deployment and Inference
+
+1. Use batch inference where possible. Online inference should be a last resort.
+2. Use edge inference where possible as it means perfect scaling for free.
+3. Complex setups need robust monitoring.
 
 ---
 
 ## Conclusion
+
+Contrary to ML, MLOps doesn’t come with a promise to solve any business problems directly. Instead, it comes with the promise to accelerate how your investments in ML return value.
+
+MLOps won’t yield immediate results, and it’ll likely require commitment from a broad range of stakeholders. Still, the process will deliver increasing benefits with the scale of your machine learning efforts.
+
+The four critical best practices we suggest you adopt are:
+
+- Versioning to ensure reproducibility of models
+- Pipelines to build better systems collaboratively
+- Testing to set standards for your production models
+- Automation to save time and build towards self-healing systems
+
+Ultimately, the goal of MLOps is to reduce technical friction to get the model from an idea into production in the shortest possible time, and then to market with as little risk as possible, and you should judge tooling decisions against that goal.
