@@ -1,17 +1,15 @@
-
-![Valohai logo](images/Valohai_logo.png)
-
 # Practical MLops
 
 ## How to get ready for production models
 
-This is the summary of [an ebook by Valohai](https://valohai.com/assets/files/practical-mlops-ebook.pdf)
+![Valohai logo](images/Valohai_logo.png)  
+This is the summary of [the ebook by Valohai](https://valohai.com/assets/files/practical-mlops-ebook.pdf). All parts have been directly copied with limited modifications.
 
 ---
 
 ### Why MLOps Matters?
 
-This is where MLOps comes in to combine operational know-how with machine learning and data science knowledge.
+This is where MLOps comes in to combine **operational know-how** with machine learning and data science knowledge.
 
 ---
 
@@ -29,7 +27,7 @@ This is where MLOps comes in to combine operational know-how with machine learni
 
 ### How Is Machine Learning Different from Traditional Software?
 
-In machine learning, a  version  of  the  code  and  a  version  of  the  data  together  produce  a  version of the ML model.
+In machine learning, a  version  of  the  **code**  and  a  version  of  the  **data**  together  produce  a  version of the ML **model**.
 
 ---
 
@@ -37,36 +35,36 @@ In machine learning, a  version  of  the  code  and  a  version  of  the  data  
 
 ### What Is the Point of MLOps?
 
-Therefore, time to market should be the number one metric to look at and optimize for any ML project.
+(...) **time to market** should be the number one metric to look at and optimize for any ML project.
 
 ### Risks MLOps workflow tackles
 
 1. Loss of knowledge
-    - We recommend a version control system that can track your whole pipeline from raw data to the model, including your code, environment, configurations, and parameters.
+    - We recommend a **version control system** that can track your whole pipeline from raw data to the model, including your code, environment, configurations, and parameters.
 2. Failures in production
-    - Ensure that the data used to train a model looks like you expected it to.
-    - Ensure that the model works not only in training but in a real-world environment.
-    - Ensure that the infrastructure works consistent.
+    - Ensure that the **data** used to train a model looks like you expected it to.
+    - Ensure that the **model** works not only in training but in a real-world environment.
+    - Ensure that the **infrastructure** works consistent.
 3. Regulatory and ethical
-    - While MLOps can’t fix model biases, it comes with the notion that these concerns should be addressed by codifying tests for them into a machine learning pipeline.
+    - While MLOps can’t fix model biases, it comes with the notion that these concerns should be addressed by **codifying tests** for them into a machine learning pipeline.
 4. Data security
 
 ### Time to Market
 
-- To get a truly scalable business model around ML usually requires that you step back and think of your product in terms of the pipeline instead of a single instance of a trained model.
-- Broadly speaking, there are two ways that MLOps helps accelerate the time to market of machine learning:
-    1. It creates a shared language among the extended team.
-        - Modern tooling and shared work methods (CI/CD, version control, microservices) have enabled companies to scale their throughput in software development exponentially.
-    2. It automates manual tasks.
-        - Automation of collecting data, training, and evaluating models allows the most scarce resources, i.e. data scientists, to focus their efforts on further development.
-        - However, in the most extreme cases, your model needs to be updated all the time to keep up with the pace at which the underlying data is changing.
+- To get a truly scalable business model around ML usually requires that you step back and think of your product in terms of the **pipeline** instead of a single instance of a trained model.
+- Broadly speaking, there are two ways that MLOps helps **accelerate** the time to market of machine learning:
+    1. It creates a **shared language** among the extended team.
+        - Modern *tooling* and shared work *methods* (CI/CD, version control, microservices) have enabled companies to scale their throughput in software development exponentially.
+    2. It **automates** manual tasks.
+        - Automation of collecting data, training, and evaluating models allows the *most scarce resources*, i.e. data scientists, to focus their efforts on further development.
+        - However, in the most extreme cases, your model needs to be *updated* all the time to keep up with the pace at which the underlying data is changing.
 
 ### The MLOps Workflow Enforces Best Practices
 
-- Version  control  everything,  including  models,  code,  data, parameters, and environment. Enable anyone to trace how a model was produced.
-- Componentize the steps of the model creation process and build them into a pipeline. A single notebook is not a pipeline.
-- Codify testing. With checkpoints and safeguards in place, there is a standard that models have to adhere to.
-- Automate work to increase how much time can be spent on future development.
+- **Version  control**  everything,  including  models,  code,  data, parameters, and environment. Enable anyone to trace how a model was produced.
+- **Componentize** the steps of the model creation process and build them into a pipeline. A single notebook is not a pipeline.
+- **Codify testing.** With checkpoints and safeguards in place, there is a standard that models have to adhere to.
+- **Automate work** to increase how much time can be spent on future development.
 
 ---
 
@@ -76,56 +74,56 @@ Only a model that is running in production can bring value.
 
 Here are three steps to get started:
 
-1. Define your objective and clear, concrete, and measurable metrics with all the relevant stakeholders
-    - Ensure everyone understands the “why” behind the project (...)
-    - Document and share how the work is currently done (...) and what it will take to replace the current way of working.
-    - Uncover assumptions that different team members have (...)
-2. Measure the success of different stages of the project (...)
-    - It will be hard to estimate the total time it will take to deliver
-    - Make sure you split your project into smaller pieces to validate your assumptions, track your progress, and gather feedback.
-    - (...) make sure you reflect on your progress and whether you’re heading in
-the right direction to solve the original issue. Don’t be afraid to go back to defining the problem. Document the lessons you’ve learned and place them in an internal Wiki for other teams to learn from.
-3. Have a multi-disciplinary team with clear roles and responsibilities
-    - (...) measure how well your team is working together.
-    - Make sure everyone understands each other’s roles and responsibilities in this project.
-    - Involve IT early on
+1. **Define your objective** and clear, concrete, and **measurable metrics** with all the relevant stakeholders
+    - Ensure everyone understands the *“why”* behind the project (...)
+    - *Document* and share how the work is currently done (...) and what it will take to replace the current way of working.
+    - Uncover *assumptions* that different team members have (...)
+2. **Measure** the success of different stages of the project (...)
+    - It will be hard to estimate the *total time* it will take to deliver
+    - Make sure you *split your project* into smaller pieces to validate your assumptions, track your progress, and gather feedback.
+    - (...) make sure you *reflect on your progress* and whether you’re heading in
+the right direction to solve the original issue. Don’t be afraid to go back to defining the problem. *Document* the lessons you’ve learned and place them in an internal Wiki for other teams to learn from.
+3. Have a multi-disciplinary team with **clear roles and responsibilities**
+    - (...) measure how well your team is working *together*.
+    - Make sure everyone *understands each other’s roles* and responsibilities in this project.
+    - Involve *IT* early on
 
 ### Speak the Same Language
 
 ### Use Every Project as an Opportunity to Educate Your Organization about Machine Learning
 
-(...) make sure you share learning from your machine learning
+(...) make sure you **share learning** from your machine learning
 projects across the organization.
 
 ### Define Clear Shared Objective and Metrics
 
 - #### Assumptions
 
-  - Why does this project exist?
-  - How is performance measured today?
-  - How will the deployed model be consumed?
-  - Who owns the data?
+  - Why does this project **exist**?
+  - How is **performance** measured today?
+  - How will the deployed model be **consumed**?
+  - Who **owns** the data?
 
 - #### Success criteria
 
-  - When defining the metrics for your success criteria, think about:
-    - What is the key metric that will determine if the model can be taken to production?
-    - How will the model be taken to production?
-    - How often will the model need to be updated?
+  - When defining the **metrics** for your success criteria, think about:
+    - What is the **key metric** that will determine if the model can be taken to production?
+    - How will the model be taken to **production**?
+    - How **often** will the model need to be updated?
     - Model metrics
-    - Cost to maintain and update the model
-    - Ethical considerations
+    - **Cost** to maintain and update the model
+    - **Ethical** considerations
   - What’s the minimum viable product?
-    - Model accuracy x to be able to test in a sandboxed environment
-    - Manually train, build and deploy the pipeline.
+    - **Model accuracy** *x* to be able to test in a sandboxed environment
+    - **Manually** train, build and deploy the pipeline.
   - MLOps metrics
-    - Model update frequency met (and able to identify stale models)
-    - Time to re-train and deploy a new model and push to production
-    - Performance of model endpoint for online predictions (e.g. response time in ms)
-    - /# of calls / % of failed calls to the model endpoint
-    - Collaboration between the multi-disciplinary team (e.g. data scientists, engineers, IT-Ops, legal, business)
-    - Attendance of key stakeholders to regular project updates (for example, every six weeks)
-    - Infrastructure scales to the machine learning teams without manual work from IT.
+    - Model update frequency **met** (and able to identify stale models)
+    - **Time to re-train** and deploy a new model and push to production
+    - Performance of **model endpoint** for online predictions (e.g. response time in ms)
+    - /# of calls / % of failed calls to the **model endpoint**
+    - **Collaboration** between the multi-disciplinary team (e.g. data scientists, engineers, IT-Ops, legal, business)
+    - Attendance of key **stakeholders** to regular project updates (for example, every six weeks)
+    - **Infrastructure scales** to the machine learning teams without manual work from IT.
 
 ---
 
@@ -133,19 +131,19 @@ projects across the organization.
 
 ### Company 1
 
-Company 1 jumps right into the nitty-gritty and starts gathering and analyzing data. (...) From idea to production, the delivery time is blazingly fast.<br>
-It’s hard to reproduce all the steps that it took to train the model – but it gets done.<br>
-Finally, the company decides to put in place tooling to automate retraining and deployment, and at this point, everything is rebuilt.
+Company 1 jumps right into the nitty-gritty and starts gathering and analyzing data. (...) From idea to production, the delivery time is **blazingly fast**.  
+It’s hard to reproduce all the steps that it took to train the model – but it gets done.  
+Finally, the company decides to put in place tooling to automate retraining and deployment, and at this point, **everything is rebuilt**.
 
 ### Company 2
 
-Company 2 acknowledges that machine learning models will be core assets going forward and decides to adopt ML focused tooling before going past the first successful proof-of-concept.<br>
-While Company 2 is slower to initial delivery, the benefits start to compound quickly. Everything is automatically reproducible, and data scientists can concentrate on further development rather than firefighting.
+Company 2 acknowledges that machine learning models will be core assets going forward and decides to adopt ML focused tooling before going past the first successful proof-of-concept.  
+While Company 2 is **slower to initial delivery**, the benefits start to compound quickly. **Everything is automatically reproducible**, and data scientists can concentrate on further development rather than firefighting.
 
 ### Learnings
 
-- The right time to consider tooling and workflow is when the first data scientist is hired, not when the first model goes to production (...)
-- Building up an ML workflow does require a strategic commitment and investment from the company.
+- The right time to consider tooling and workflow is *when the first data scientist is hired*, not when the first model goes to production (...)
+- Building up an ML workflow does require a *strategic commitment and investment* from the company.
 
 ---
 
@@ -157,58 +155,50 @@ Exploration is the first concrete, hands-on step of any machine learning project
 
 #### Data Exploration
 
-Without data, there can be no model, so data exploration precedes model exploration quite naturally.<br>
-Fast iterations and visual feedback are the critical components for the data exploration work.<br>
-Many of the notebooks for this step end up as disposable throwaways.<br>
-Reproducibility, library dependencies, and version control can bring some value but are often not a hard requirement.
+Without data, there can be no model (...)  
+**Fast iterations** and **visual feedback** are the critical components for the data exploration work.  
+Many of the notebooks for this step end up as disposable throwaways.  
+**Reproducibility**, library dependencies, and version control can bring some value but are often **not a hard requirement**.
 
 #### Model Exploration
 
-Choosing the model often requires the data scientist to try out and look for optimal parameters (also known as hyperparameters) within the model.<br>
-Model exploration has higher requirements from the technical and DevOps point of view than data exploration.<br>
-Model exploration costs both time and money, so version control and reproducibility are paramount for all the experiments.
+Choosing the model often requires the data scientist to try out and look for **optimal parameters** (...) within the model.  
+Model exploration has **higher requirements** from the technical and DevOps point of view than data exploration.  
+Model exploration costs both time and money, so **version control and reproducibility are paramount** for all the experiments.
 
 #### Exploration and MLOps
 
-Having a unified pipeline for data scientists and engineers to move from the first experiment to the final productized model is essential.
+Having a **unified pipeline** for data scientists and engineers to move from the first experiment to the final productized model is essential.
 
 #### Key Takeaways - Model and Data Exploration
 
-1. Data exploration is a lightweight, offline task for understanding data using visualization
-2. Model exploration has higher requirements for computing power and version control
-3. Disconnecting exploration and MLOps is disconnecting data scientists and engineers
+1. **Data exploration** is a lightweight, offline task for understanding data using visualization
+2. **Model exploration** has higher requirements for computing power and version control
+3. Disconnecting exploration and MLOps is disconnecting **data scientists and engineers**
 
 ### Metrics and Model Optimization
 
-(...) how should the hyperparameters of the model be chosen?<br>
-Metrics are the quantities which define the success or failure of a model.
-
-#### Optimization Vocabulary
-
-The act of optimizing the loss function is often called training.
-
 #### Training/Validation/Test Datasets
 
-- Training dataset - Between 60-95% of the available data. Used to compute the training loss for a model
-- Validation dataset - Between 3-20% of the available data. (...) optimizing the validation metrics finds the hyperparameters of a model
-- Test dataset - Between 2-20% of the available data. After model tuning, provides an unbiased estimate of how the validation metrics will perform in production.
+- **Training dataset** - Between 60-95% of the available data. Used to compute the *training loss* for a model
+- **Validation dataset** - Between 3-20% of the available data. (...) optimizing the validation metrics finds the *hyperparameters* of a model
+- **Test dataset** - Between 2-20% of the available data. After model tuning, provides an *unbiased estimate* of how the validation metrics will perform in production.
 
 #### Validation Metrics for Tuning and Production
 
-They can mirror those found in an ML classroom, or they can be entirely unique to a specific business case.
+They can mirror those found in an ML **classroom**, or they can be **entirely unique** to a specific business case.
 
 #### Optimizing Metrics and Decision Making
 
-Bayesian optimization is a popular tool for model tuning: it requires no gradient information, can optimize noisy metrics and can work with categorical parameters<br>
-In most production settings, multiple metrics define success.<br>
-Multimetric optimization explores the tradeoff between competing metrics.<br>
-(...) the test dataset should be used to reevaluate the metrics on any hyperparameters being considered for production.
+**Bayesian optimization** is a popular tool for model tuning: it requires no gradient information, can optimize noisy metrics and can work with categorical parameters  
+**Multimetric optimization** explores the tradeoff between competing metrics.  
+(...) the **test dataset** should be used to **reevaluate the metrics** on any hyperparameters being considered for production.
 
 #### Key Takeaways - Metrics and Model Optimization
 
 1. Split available data into training, validation and test datasets.
-2. Define and study metrics which represent success in production, not just during training.
-3. Identify the best hyperparameters for your metrics with as little tuning cost as possible.
+2. Define and study metrics which represent **success in production**, not just during training.
+3. **Identify the best hyperparameters** for your metrics with as little tuning cost as possible.
 
 ### Productionalization - End-to-End Pipelines
 
@@ -217,6 +207,7 @@ Productionalization for ML is taking that problem-solving capability - only exis
 #### The Manual Cycle
 
 ![Manual ML steps to serve the model as a prediction service.](images/manual_ML_steps.png)
+
 Characteristics of a manual ML pipeline:
 
 - **The model is the product**
@@ -229,8 +220,9 @@ Characteristics of a manual ML pipeline:
 #### The Automated Pipeline
 
 ![Automated ML pipeline](images/automated_ML_pipeline.png)
-An automated pipeline consists of components and a blueprint for how those are coupled to produce and update the most crucial component – the model.<br>
-The system offers the ability to execute, iterate, and monitor a single component in the context of the entire pipeline with the same ease and rapid iteration as running a local notebook cell on a laptop.
+
+An automated pipeline consists of **components** and a **blueprint** for how those are coupled to produce and update the most crucial component – the model.  
+The system offers the ability to execute, iterate, and monitor a single component in the context of the entire pipeline with the same ease and **rapid iteration** as running a local notebook cell on a laptop.
 
 Characteristics of an automated ML pipeline:
 
@@ -243,101 +235,95 @@ Characteristics of an automated ML pipeline:
 
 #### Key Takeaways - Productionalization - End-to-End Pipelines
 
-1. Do not deploy the model; deploy the pipeline.
-2. To build a pipeline, split the system down into small well-defined components.
-3. Model accuracy will eventually degrade as the world changes.
+1. Do not deploy the model; **deploy the pipeline**.
+2. To build a pipeline, split the system down into **small well-defined components**.
+3. Model **accuracy** will eventually **degrade** as the world changes.
 
 ### Productionalization - Feature Stores
 
-Tooling for managing features is almost non-existent.
+Tooling for managing features is almost *non-existent*.
 
 #### The Feature Store
 
-Feature stores are central hubs for features. They transform raw data into feature values, store the values, and serve them for model training and online predictions.
-
-Feature stores allow data scientists to:
-
-- Build a library of great features collaboratively.
-- Deploy features to production instantly.
-- Share, discover, and re-use features.
+Feature stores are **central hubs for features**. They *transform* raw data into feature values, *store* the values, and *serve* them for model training and online predictions.
 
 #### Key takeaways - Productionalization - Feature Stores
 
-1. Building features and getting them to production is one of the hardest parts of productionizing ML.
-2. Feature stores allow data scientists to build, deploy, and share features quickly and easily.
-3. Feature stores complement existing ML infrastructure to bring DevOps-like capabilities to the feature lifecycle.
+1. Building features and getting them **to production** is one of the hardest parts of productionizing ML.
+2. Feature stores allow data scientists to **build, deploy, and share features** quickly and easily.
+3. Feature stores complement existing ML infrastructure to bring **DevOps-like capabilities** to the feature lifecycle.
 
 ### Testing
 
-Testing in ML is like trying to hit a moving target. The system’s behavior depends on the data’s dynamic qualities and the various model configuration choices.
+Testing in ML is like trying to hit a **moving target**. The system’s behavior depends on the data’s *dynamic qualities* and the various *model configuration choices*.
 
 #### Data Testing
 
-Like the unit tests for your code define and test your assumptions about the inputs, your data validation tests should do the same for training and inference input data. You should test for null values, abnormal statistical distributions within a feature, and the relationships between features.
+Like the unit tests for your code define and **test your assumptions about the inputs**, your data validation tests should do the same for training and inference input data. You should test for *null values*, *abnormal statistical distributions* within a feature, and the *relationships* between features.
 
 #### Model Testing
 
-In the training phase, you can test the impact of each hyperparameter.
+In the training phase, you can test the **impact of each hyperparameter**.
 
-When deploying the model, test the relationship between your offline metrics and the actual impact of the model in the real world.
+When deploying the model, test the relationship between your **offline metrics** and the actual impact of the model in the **real world**.
 
-Another viable smoke test can be testing your new shiny model against a simple baseline model. Trickle small amounts of live production data to be handled by your new model as a canary test before you fully commit.
+Another viable smoke test can be testing your new **shiny model *against* a simple baseline model**. Trickle small amounts of *live production data* to be handled by your new model as a canary test before you fully commit.
 
 #### Infrastructure Testing
 
-Your ML pipeline should be as reproducible as possible from one day to the next.
+Your ML pipeline should be as **reproducible** as possible from **one day to the next**.
 
-Test the reproducibility of your training pipeline by training two or more models side-by-side with the same data and measure any discrepancies between metrics. Also, test things like the ability to continue training predictably from a mid-crash checkpoint. Don’t forget to create integration smoke tests for your entire pipeline, all the way from first data validation down to model deployment. These sorts of tests should run continuously and during the deployment of a new model version.
+Test the reproducibility of your training pipeline by **training two or more models side-by-side** with the same data and measure any discrepancies between metrics. Also, test things like the ability to continue training predictably from a **mid-crash checkpoint**. Don’t forget to create **integration smoke tests** for your entire pipeline, all the way from first data validation down to model deployment. These sorts of **tests should run continuously** and during the deployment of a new model version.
 
-You should continuously test your rollback infrastructure, as it is your last line of defense when all other tests have failed you.
+You should continuously test your **rollback infrastructure**, as it is your last line of defense when all other tests have failed you.
 
 #### Key Takeaways - Testing
 
-1. Due to the dynamic nature of ML, testing is even more critical.
-2. Testing code is good; testing data is paramount.
-3. Reproducibility of the pipeline is the key to safe deployment.
+1. Due to the dynamic nature of ML, testing is even more **critical**.
+2. Testing code is good; **testing data is paramount**.
+3. **Reproducibility** of the pipeline is the key to safe deployment.
 
 ### Deployment and Inference
 
 #### Batch Inference
 
-Instead of providing value instantly in real-time for each request, batch inference provides answers to a set of questions later.
+Instead of providing value instantly in real-time for each request, batch inference provides answers to a **set of questions later**.
 
-In the MLOps context, the value of inference in fixed intervals allows engineers to parallelize more efficiently and use a considerable amount of computing power more predictably.
+In the MLOps context, the value of inference in fixed intervals allows engineers to parallelize more **efficiently** and use a considerable amount of computing power more **predictably**.
 
 #### Online Inference
 
-Online inference suits any situation where the value provided by the model is needed right away.
+Online inference suits any situation where the value provided by the model is **needed right away**.
 
-Any error or bias in the prediction leaks back to the customer right away. The system also needs to be automatically scalable to accommodate the peaks in traffic. (...) Requirements for monitoring are much higher, and reaction time for any intervention needs to be close to zero.
+Any **error or bias** in the prediction leaks back to the customer right away. The system also needs to be **automatically scalable** to accommodate the peaks in traffic. (...) Requirements for **monitoring** are much higher, and reaction time for any intervention needs to be close to zero.
 
 #### Edge Inference
 
-Instead of having an app consume a central cloud API, you deploy the model as part of your application directly in the user’s device or browser.
+Instead of having an app consume a central cloud API, you deploy the model as part of your application **directly in the user’s device** or browser.
 
-Perfect scaling comes for free as the more requests you get, the more edge devices you have at your disposal. (...) The downside is that it might become harder to maintain all the different versions out there.
+**Perfect scaling** comes for free as the more requests you get, the more edge devices you have at your disposal. (...) The downside is that it might become **harder to maintain** all the different versions out there.
 
-Another potential downside is security. While you are not sending all your data to external devices, you are sending a model that is trained with that data.
+Another potential downside is **security**. While you are not sending all your data to external devices, you are sending a model that is trained with that data.
 
 #### Key Takeaways - Deployment and Inference
 
-1. Use batch inference where possible. Online inference should be a last resort.
-2. Use edge inference where possible as it means perfect scaling for free.
-3. Complex setups need robust monitoring.
+1. Use **batch inference** where possible. Online inference should be a last resort.
+2. Use edge inference where possible as it means **perfect scaling** for free.
+3. Complex setups need **robust monitoring**.
 
 ---
 
 ## Conclusion
 
-Contrary to ML, MLOps doesn’t come with a promise to solve any business problems directly. Instead, it comes with the promise to accelerate how your investments in ML return value.
+Contrary to ML, MLOps doesn’t come with a promise to solve any business problems directly. Instead, it comes with the **promise to accelerate** how your investments in ML return value.
 
-MLOps won’t yield immediate results, and it’ll likely require commitment from a broad range of stakeholders. Still, the process will deliver increasing benefits with the scale of your machine learning efforts.
+MLOps won’t yield immediate results, and it’ll likely require commitment from a broad range of stakeholders. Still, the process will deliver **increasing benefits with the scale** of your machine learning efforts.
 
 The four critical best practices we suggest you adopt are:
 
-- Versioning to ensure reproducibility of models
-- Pipelines to build better systems collaboratively
-- Testing to set standards for your production models
-- Automation to save time and build towards self-healing systems
+- **Versioning** to ensure reproducibility of models
+- **Pipelines** to build better systems collaboratively
+- **Testing** to set standards for your production models
+- **Automation** to save time and build towards self-healing systems
 
-Ultimately, the goal of MLOps is to reduce technical friction to get the model from an idea into production in the shortest possible time, and then to market with as little risk as possible, and you should judge tooling decisions against that goal.
+Ultimately, the goal of MLOps is to reduce technical friction to get the model **from an idea into production in the shortest possible time**, and then to market with as little risk as possible, and you should judge tooling decisions against that goal.
